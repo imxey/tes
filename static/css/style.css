@@ -1,0 +1,86 @@
+.kotak {
+    width: 500px;
+    margin-left: 450px;
+    position: absolute;
+    border: 1px solid #3483bb;
+    
+}
+.atas_kotak {
+    text-align: center;
+    background-color: #3483bb;
+    color: white;
+    padding: 5px 5px;
+}
+img {
+    text-align: center;
+    display: block;
+    margin-left: 150px;
+    width: 200px;
+    
+}
+#rumus {
+    text-align: center;
+    font-weight: bold;
+}
+.keterangan p {
+    margin-block-start: 0;
+    margin-block-end: 5px;
+}
+.perhitungan h1 {
+    text-align: center;
+}
+.isi_kotak {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#hitung {
+    margin-left: 200px;
+    background-color: #1a4c70;
+    border:0;
+    padding: 5px 7px 5px 7px;
+    color: white;
+}
+@media(min-width:320px) and (max-width: 767px){
+.kotak {
+    width: 300px;
+    margin-left: 0px;
+    position: absolute;
+    border: 1px solid #3483bb;
+    
+}
+.atas_kotak {
+    text-align: center;
+    background-color: #3483bb;
+    color: white;
+    padding: 5px 5px;
+}
+img {
+    text-align: center;
+    display: block;
+    margin-left: 75px;
+    width: 100px;
+    
+}
+#rumus {
+    text-align: center;
+    font-weight: bold;
+}
+.keterangan p {
+    margin-block-start: 0;
+    margin-block-end: 5px;
+}
+.perhitungan h1 {
+    text-align: center;
+}
+.isi_kotak {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#hitung {
+    margin-left: 100px;
+    background-color: #1a4c70;
+    border:0;
+    padding: 5px 7px 5px 7px;
+    color: white;
+}
+}

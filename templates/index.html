@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabale=no"/>
+    <title>LUAS SEGITIGA</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <div class="kotak">
+        <div class="atas_kotak">
+            <h2>Luas Segitiga</h2>
+        </div>
+        <div class="isi_kotak">
+            <img src="{{ url_for('static', filename='/images/gambar_segitiga.jpeg') }}">
+            <p>Rumus luas segitiga yaitu :</p>
+            <p id="rumus">L=1 * a * t/2</p>
+            <div class="keterangan">
+            <p>Di mana :</p>
+            <p>L = Luas</p>
+            <p>a = Panjang Alas</p>
+            <p>t = Tinggi</p>
+            </div>
+            <br>
+            <hr>
+            <div class="perhitungan">
+                <h1>Hitung Luas Segitiga</h1>
+                <form action="/" method="post">
+                    <input type="number" step="any" id="a" name="a" placeholder="Nilai Alas" required><br><br>
+                    <input type="number" step="any" id="b" placeholder="Nilai Tinggi" name="b" required><br><br>
+                    <input type="submit" id="hitung" value="Hitung">
+                </form>
+                {% if hasil %}
+                    <p>L = 1/2 * a * t</p>
+                    <p>L = 1/2 * {{a}} * {{b}}</p>
+                    <p>L = {{hasil}}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
